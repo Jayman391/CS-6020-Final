@@ -21,7 +21,7 @@ model {
   post_rates[2] ~ beta(post_rates_std_prior[2,2], post_rates_std_prior[2,1]); 
   comment_rates[1] ~ beta(comment_rates_std_prior[1,1], comment_rates_std_prior[1,2]); 
   comment_rates[2] ~ beta(comment_rates_std_prior[2,1], comment_rates_std_prior[2,2]); 
-  rho ~­ beta(rho_prior[1], rho_prior[2]);
+  rho ~ beta(rho_prior[1], rho_prior[2]);
 
   // Loop over all node pairs to calculate the log likelihood
   for (i in 1:n) {
