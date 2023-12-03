@@ -507,7 +507,7 @@ if __name__ == '__main__' :
 
     args = parser.parse_args()
 
-    sim = Simulation(float(args.user_growth_rate), float(args.interaction_threshold)/10, float(args.new_group_rate)/10, float(args.new_community_rate)/10)
+    sim = Simulation(float(args.user_growth_rate)/10, float(args.interaction_threshold)/10, float(args.new_group_rate)/10, float(args.new_community_rate)/10)
     sim.initialize()
     sim.run()
     #sim.plot(args.run)
